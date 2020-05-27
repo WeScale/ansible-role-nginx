@@ -110,7 +110,7 @@ This is a sample playbook file for deploying the Ansible Galaxy NGINX role in a 
 - hosts: localhost
   become: true
   roles:
-    - role: nginxinc.nginx
+    - role: mehdi_wsc.nginx
 ```
 This is a sample playbook file for deploying the Ansible Galaxy NGINX role in a localhost and installing the open source version of NGINX with including vars.
 ```
@@ -118,7 +118,7 @@ This is a sample playbook file for deploying the Ansible Galaxy NGINX role in a 
 - hosts: localhost
   become: true
   roles:
-    - role: nginxinc.nginx
+    - role: mehdi_wsc.nginx
   vars:
     worker_connections: 2048
     listening_port: 8080
