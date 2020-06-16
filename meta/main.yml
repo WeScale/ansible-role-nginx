@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  role_name: nginx  role_name: foo
+  role_name: nginx 
   author: mehdi kerbedj
   description: Nginx Role
   company: Wescale
