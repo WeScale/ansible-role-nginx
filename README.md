@@ -18,11 +18,11 @@ Installation
 
 **Ansible Galaxy**
 
-Use `ansible-galaxy install mehdi_wsc.nginx` to install the latest stable release of the role on your system.
+Use `ansible-galaxy install wescale.nginx` to install the latest stable release of the role on your system.
 
 **Git**
 
-Use `git clone https://github.com/mehdi-wsc/nginx.git` to pull the latest edge commit of the role from GitHub.
+Use `git clone https://github.com/WeScale/ansible-role-nginx.git` to pull the latest edge commit of the role from GitHub.
 
 Platforms
 ---------
@@ -59,6 +59,7 @@ I split variables in two directories , the default  and vars :
 
 defaults :
 - Variables declared here are commons for Nginx configuration , I set default values,However you can modify to your own.
+
 ```
 ---
     #major vars
@@ -110,7 +111,7 @@ This is a sample playbook file for deploying the Ansible Galaxy NGINX role in a 
 - hosts: localhost
   become: true
   roles:
-    - role: mehdi_wsc.nginx
+    - role: wescale.nginx
 ```
 This is a sample playbook file for deploying the Ansible Galaxy NGINX role in a localhost and installing the open source version of NGINX with including vars.
 ```
@@ -118,7 +119,7 @@ This is a sample playbook file for deploying the Ansible Galaxy NGINX role in a 
 - hosts: localhost
   become: true
   roles:
-    - role: mehdi_wsc.nginx
+    - role: wescale.nginx
   vars:
     worker_connections: 2048
     listening_port: 8080
@@ -126,4 +127,4 @@ This is a sample playbook file for deploying the Ansible Galaxy NGINX role in a 
 ```
 License
 -------
-[GNU GENERAL PUBLIC LICENSE](https://github.com/mehdi-wsc/nginx/blob/master/LICENSE)
+[GNU GENERAL PUBLIC LICENSE](https://github.com/WeScale/ansible-role-nginx/blob/master/LICENSE)
